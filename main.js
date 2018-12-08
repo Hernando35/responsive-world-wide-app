@@ -122,6 +122,8 @@ function imageInfo(weather, x, cardNumber, imageNumber) {
 
     var p = document.createElement("p");
     p.innerHTML = "T.Max: " + tempMax + "&#8451;" + " | T.Min: " + tempMin + "&#8451;";
+    p.innerHTML = "coordinates: " + coordinates;
+    document.getElementById(cardNumber).appendChild(p);
     document.getElementById(cardNumber).appendChild(p);
 
     var p = document.createElement("p");
